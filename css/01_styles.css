@@ -59,21 +59,26 @@ body {
 
 main {
     width: 900px;
+    height: auto;
     margin: 0 auto;
     background-color: #fff;
     border: 1px solid black;
     border-radius: 30px;
-    padding: 5px;
-    margin-top: 30px;
+    padding: 10px;
     margin-bottom: 30px;
-
+    box-sizing:border-box;
+    padding-top: 50px;
 }
+
+
+
 header {
     width: 100%;
     height: 50px;
     background-color: #c55394;
     color: #fff;
     font-family:'Courgette', cursive;
+    font-weight: bold;
 }
 header nav {
     float: right;
@@ -86,17 +91,100 @@ a {
     color: #fff;
 }
 header nav a:hover {
- background-color: black;
+color: black;
 }
 h1 {
-    background-image: url(../img/rainbow.png);
+    background-image: url(../img/rainbow.png) no-repeat ;
+    object-position: 100% 10%;
+
    
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin-top: 30px ;
     color:#c55394 ;
     width: 400px;
     height: 150px;
     margin-left: 40%; 
     font-family:'Courgette', cursive;
     font-size:xx-large;
+    font-weight: bold;
+    padding-top: 50px;
+    
+}
+figure {
+    border: thin #c41919 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 150px;
+    margin: auto;
+    text-align: center;
+}
+.img img {
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    height: 20px;
+    opacity: 0.8;
+    background-color: #333;
+    line-height: 20px;
+    width: 150px;
+}
+ #principe ,#nous_trouver,#licornes {
+    color: #c55394;
+   font-size: 1.5em;
+    font-family:'Courgette', cursive;
+ 
+}
+#maps {
+    /* border: 2px solid; */
+    box-sizing: border-box;
+    display:flow-root;
+   
+}
+#maps #contact {
+    
+    width: 50%;
+    height: 300px;
+    float:left;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+h4 {
+    color: #c55394;
+    font-family:'Courgette', cursive;
+    font-size: 1.5em;
+}
+button {
+    background-color:#c55394  ;
+    width: 90px;
+    height: 30px;
+    border-radius: 25px;
+    color: #fff;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #c55394;
+    float: right;
+      
+}
+footer p {
+    margin-right: 20px;
+    text-align: right;
+    padding: 25px; 
+    color: #fff;
+}
+.clear {
+    clear: both;
 }

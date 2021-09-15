@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8b0593798.js" crossorigin="anonymous"></script>
     <!-- normalize en externe -->
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <!-- mes styles  -->
@@ -28,12 +29,13 @@
         </nav>
     </header>
 
-    <div>
+    <div class="">
         <h1 class="jour">Un jour, une licorne</h1>
-
+        <div class="clear"></div>
         <main id="">
             <section>
-                <h3 id="principe">Le principe</h3>
+                <h3 id="principe"><i class="far fa-star"></i>Le principe</h3>
+                <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aliquid voluptates! Officia impedit
                     magnam itaque nam! Consequatur sint recusandae quibusdam officiis distinctio iusto quia dolor neque.
                     Quasi tempore rem natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos
@@ -47,56 +49,64 @@
 
             </section>
             <!-- fin section 1 principe -->
-
-            <section>
-                <h3 id="licornes">Nos licornes</h3>
+            <br>
+            <section class="img">
+                <h3 id="licornes"><i class="far fa-star"></i>Nos licornes</h3>
+                <br>
                 <figure>
-                    <img src="../img/unicorns/photo1.jpg" alt="Lulu Confetty">
+                    <img src="img/photo1.jpg" alt="Lulu Confetty">
                     <figcaption>Lulu Confetty</figcaption>
                 </figure>
                 <figure>
-                    <img src="../img/unicorns/photo2.jpg" alt="Lapillon Magik">
+                    <img src="img/photo2.jpg" alt="Lapillon Magik">
                     <figcaption>Lapillon Magik</figcaption>
                 </figure>
                 <figure>
-                    <img src="../img/unicorns/photo3.jpg" alt="El NinjaCorn">
+                    <img src="img/photo3.jpg" alt="El NinjaCorn">
                     <figcaption>El NinjaCorn</figcaption>
                 </figure>
                 <figure>
-                    <img src="../img/unicorns/photo4.jpg" alt="Sweety Candy">
+                    <img src="img/photo4.jpg" alt="Sweety Candy">
                     <figcaption>Sweety Candy</figcaption>
                 </figure>
             </section>
+            <br>
             <!-- fin section 2 licornes-->
 
-            <section>
-                <h3 id="nous_trouver">Nous trouver</h3>
-
+            <section id="maps">
+                <h3 id="nous_trouver"><i class="far fa-star"></i>Nous trouver</h3>
+                <br>
                 <!-- i frame google maps adresse colombbus -->
                 <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9092271438985!2d2.21152571580728!3d48.85994130855139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664cb22a29415%3A0xb5785da3aae22abe!2s8%20Bd%20Louis%20Loucheur%2C%2092150%20Suresnes!5e0!3m2!1sfr!2sfr!4v1631630832261!5m2!1sfr!2sfr"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+                <div class="clear"></div>
                 <!-- fin de la div pour l'iframe  -->
 
-                <div id="contact">
 
-                    <h4>Notre élevage de licornes est situé au :</h4>
+                <div id="contact">
+                    <br>
+
+                    <h4>Notre élevage de licornes est situé au:</h4>
                     <address>
                         8, bd Loucheur<br>
                         92150 Suresnes<br>
                         01 12 15 16 17
                     </address>
-
+                    <div class="clear"></div>
                     <div>
                         <h4>Newsletter</h4>
                         <form action="#" method="POST">
                             <label for="email">Abonnez-vous simplement à notre newsletter mensuelle !</label>
+                            <div class="clear"></div>
                             <input type="email" name="email" id="email" placeholder="votre@email.fr" required>
+                            <div class="clear"></div>
                             <button>Valider</button>
 
                         </form>
+                        <div class="clear"></div>
                     </div>
                     <!-- fin div pour le formulaire -->
                 </div>
