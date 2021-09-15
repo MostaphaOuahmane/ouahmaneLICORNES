@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin de ricette */
+body {
+    background: url(../img/background.png);
+}
+
+header {
+    background-color: #101010;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+    float: left;
+}
+
+header nav {
+    width: 50%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 480px  
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+    font-family: 'Courgette', cursive; 
+    font-size:  1.5em;
+    padding: 10px;
+    box-sizing: border-box;   
+}
+
+header nav a:hover {
+    color: darkgoldenrod;
+}
+
+.titre{
+    text-align: center;
+    font-family: 'Courgette', cursive; ;
+    font-size: 2.8em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color:  #c55394;
+
+}
+
+main {
+    background-color:#fff;
+    color: #333;
+    width: 800px;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.parti-a {
+    display: flex;
+    column-gap: 60px;
+}
+.parti-a  p img {
+    flex-direction: column;
+}
+.parti-a p {
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+img {
+    border-radius: 15px;
+}
+ .parti-b {
+    display: flex;
+    
+}
+.parti-b img {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 170px;
+    height: 250px;
+    margin: 10px;
+  
+    
+}
+.parti-c {
+    display: flex;
+    column-gap: 60px;
+    
+}
+.parti-c p img {
+    flex-direction: column;
+}
+.parti-c p {
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.parti-d {
+    display: flex;
+    column-gap: 40px;
+  
+}
+.parti-d .youtub {
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;
+    height: 100%;
+   box-sizing: border-box;
+
+}
+.parti-d .maps {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+.parti-f {
+    display: flex;
+    column-gap: 60px;
+
+   
+}
+.parti-f p , address{
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid rgb(79, 82, 76);
+    border-radius: 5px;
+    text-align: center;
+    background: #c55394 ;
+    margin-bottom: 0;
+    padding: 15px;
+}
+h3 {
+    color:  #c55394;
+    font-family: 'Courgette', cursive; ;
+    font-size: 1.8em;
+}
+
+footer {
+    background: black;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+}
+footer p {
+    margin-right: 20px;
+    text-align: right;
+    padding: 10px;
+    color: #fff;
+    
+
+}
