@@ -94,7 +94,7 @@ header nav a:hover {
 color: black;
 }
 h1 {
-    background-image: url(../img/rainbow.png) no-repeat ;
+    background-image: url(../img/rainbow.png)  ;
     object-position: 100% 10%;
 
    
@@ -110,21 +110,25 @@ h1 {
     padding-top: 50px;
     
 }
+p {
+    font-style:italic;
+    font-size: 1.1em;
+    padding-top: 16px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img  {display: flex;
+    
+}
 figure {
-    border: thin #c41919 solid;
+    
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 150px;
+    max-width: 155px;
     margin: auto;
     text-align: center;
 }
-.img img {
-    max-width: 150px;
-    max-height: 150px;
-    text-align: center;
-    margin: 10px;
-}
+
 
 figcaption {
     text-align: center;
@@ -133,7 +137,7 @@ figcaption {
     padding: 3px;
     text-align: center;
     position: relative;
-    bottom: 35px;
+    bottom: 1px;
     height: 20px;
     opacity: 0.8;
     background-color: #333;
@@ -144,22 +148,27 @@ figcaption {
     color: #c55394;
    font-size: 1.5em;
     font-family:'Courgette', cursive;
- 
 }
-#maps {
-    /* border: 2px solid; */
-    box-sizing: border-box;
-    display:flow-root;
+#general {
+    display: flex;
    
 }
-#maps #contact {
-    
+ #contact {
+    flex-direction: column;
     width: 50%;
     height: 300px;
-    float:left;
-    margin-top: 0;
-    box-sizing: border-box;
+
+    flex-grow:0;
+   
 }
+.maps {
+    flex-direction: column;
+   
+    width: 50%;
+    height: 300px;
+}
+
+
 h4 {
     color: #c55394;
     font-family:'Courgette', cursive;
@@ -182,8 +191,10 @@ footer {
 footer p {
     margin-right: 20px;
     text-align: right;
-    padding: 25px; 
+    padding: 10px;
     color: #fff;
+    
+
 }
 .clear {
     clear: both;
