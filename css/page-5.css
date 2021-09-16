@@ -1,0 +1,173 @@
+/* * styles pour les licornes ouahmane */ 
+
+/* les couleurs passées dans des variables */
+
+:root {
+    --rose-sombre : #C55394;
+	--rose-clair : #EB43A3;
+	--rose : #E577B5;
+	--noir : #333;
+    --noir-alpha : rgba(109, 109, 109, 0.9);
+    --blanc :#FFF;
+}
+
+/* font-family: 'Courgette', cursive; */
+
+body {
+    background-image: url(../img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* des couleurs en classe */
+
+.rose {
+    background-color: pink;
+}
+.vert {
+    background-color: lightgreen;
+}
+
+/* le conteneur principal */
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    background-color: var(--blanc);
+    box-shadow: 0 0 10px 2px gray;
+    border-radius: 15px;
+}
+
+/* les classes pour le flex avec des gouttières */
+
+.d-flex {
+    display: flex;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+/* gouttière pour les éléments enfant d'un élément d-flex */
+.g-15 {
+    gap: 15px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+/* marges intérieures */
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+/* les titres  */
+
+h1 {
+    padding: 70px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: var(--rose-sombre);
+    /* background-image: url(../../img/rainbow.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top; */
+
+    background: url(../img/rainbow.png) no-repeat center top;
+    margin-bottom: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--rose-clair);
+    font-family: 'Courgette', cursive;
+}
+
+/* en-tête */
+
+header {
+    background-color: var(--rose-sombre);
+    height: 50px;
+}
+
+header > h2 {
+    color: var(--blanc);
+}
+
+header > nav > a {
+    display: inline-block;
+    color: var(--blanc);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+header > nav > a:hover {
+    background-color: var(--rose-clair);
+}
+
+/* la galerie d'images et lesanimation des images */
+
+.img-200 {
+    width: 200px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+figure img {
+    transition: transform 0.5s;
+
+}
+figure img:hover{
+    transform: scale(1.5);
+}
+figcaption {
+    background-color: var(--noir-alpha);
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+
+    color: var(--blanc);
+    text-align: center;
+}
+footer {
+    background-color: var(--rose);
+    color: var(--blanc);
+    margin-top: 100px;
+    padding: 15px 10px;
+    text-align: right;
+}
+footer p {
+    margin: 0;
+}
+/* zone de contact et formulaire  */
+form input , form button {
+    display: block;
+    padding: 10px 5px;
+}
+form input[type=email] {
+    width: 200px;
+    margin-top: 10px;
+}
+form button {
+    margin-top: 15px;
+    background-color: var(--rose-clair);
+    color: var(--blanc);
+    border-radius: 5px;
+}
