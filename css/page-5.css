@@ -171,3 +171,63 @@ form button {
     color: var(--blanc);
     border-radius: 5px;
 }
+
+/* règles pour les média queries  */
+
+
+/* pour les téléphones ou les smartphones */
+
+@media (max-width: 320px) {
+    body {
+        background: #fff;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: auto;
+    }
+
+    h1 {
+        background: url(../../img/rainbow.png) no-repeat;
+        background-size: 50%;
+       font-size: 1.5em;
+    }
+
+    main {
+        width: 80%;
+        border: none;
+        box-shadow: none;
+        padding: 5px;
+        text-align: justify;
+    }
+}
+
+/* fin pour les téléphones */
+
+/* pour les petites tablettes et les smartphones grand écrans  */
+
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background: pink;
+    }
+}
+
+/* fin pour petites tablettes  */
+/* pour les tablettes et certains ordinateurs portables */
+
+@media (min-width: 768px) and (max-width: 1096px) {
+    body {
+        background: red;
+    }
+}
+
+/* pour les ordinateurs de bureau, les écrans plus grands que 1097px */
+
+@media (min-width: 1097px) {
+
+    
+}
